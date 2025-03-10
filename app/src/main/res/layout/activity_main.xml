@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8F8"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Hệ thống Quản lý Thư viện"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Nhân viên -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhân viên"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtStaff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Nguyễn Văn A"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/btn_pink"
+            android:text="Đổi"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Danh sách sách -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Danh sách sách"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Các sách -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sách 01 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sách 01"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Sách 02 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sách 02"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Nút thêm -->
+
+    <!-- Khoảng trống để đẩy thanh nav xuống cuối -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_pink"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Thêm"
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Thanh điều hướng dưới (giả lập 3 tab) -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="4dp">
+
+        <!-- Tab 1: Quản lý -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <!-- Icon tab (tùy ý) -->
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_manage" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quản lý"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Tab 2: DS Sách -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <!-- Icon tab (tùy ý) -->
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_books" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DS Sách"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Tab 3: Nhân viên -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <!-- Icon tab (tùy ý) -->
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_staff" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhân viên"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

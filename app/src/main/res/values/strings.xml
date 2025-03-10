@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quản lý Thư viện</string>
+    <string name="hint_staff">Nhập tên nhân viên</string>
+    <string name="btn_change">Đổi</string>
+    <string name="btn_add">Thêm</string>
+    <string name="result_text">Kết quả:</string>
+</resources>
